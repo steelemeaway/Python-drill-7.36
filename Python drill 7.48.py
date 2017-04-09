@@ -8,13 +8,13 @@ def mattSort(mattList):
    for mattIndex in range(1,len(mattList)):
 
      currentvalue = mattList[mattIndex]
-     position = mattIndex
+     pendingPosition = mattIndex
 
-     while position>0 and mattList[position-1]>currentvalue:
-         mattList[position]=mattList[position-1]
-         position = position-1
+     while pendingPosition>0 and mattList[pendingPosition-1]>currentvalue:
+         mattList[pendingPosition ]= mattList[pendingPosition-1]
+         pendingPosition = pendingPosition-1
 
-     mattList[position]=currentvalue
+     mattList[pendingPosition]=currentvalue
 
 mattList = [67, 45, 2, 13, 1, 998]
 mattSort(mattList)
